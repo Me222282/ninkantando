@@ -5,3 +5,7 @@ body {
 #logo-container {
     background-color: #e4000f;
 }
+
+.svg-small {
+    width: 100px;
+}

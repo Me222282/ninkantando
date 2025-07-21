@@ -1,0 +1,23 @@
+#factory {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.entry {
+    position: relative;
+    animation-name: appear;
+    animation-duration: 400ms;
+    animation-fill-mode: forwards;
+}
+
+@keyframes appear {
+    from {
+        top: -500px;
+        opacity:0;
+    }
+    to {
+        top:0;
+        opacity:1;
+    }
+}
