@@ -9,3 +9,42 @@ body {
 .svg-small {
     width: 100px;
 }
+.svg-medium {
+    width: 300px;
+}
+
+#fill-page {
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 100;
+}
+
+.spin {
+    margin: 50px;
+    position: relative;
+    animation-name: appear-spin;
+    animation-duration: 400ms;
+    animation-fill-mode: forwards;
+    animation-timing-function: linear;  
+}
+
+@keyframes appear-spin {
+    from {
+        top: 0px;
+        left: -500px;
+        rotate: -360deg;
+        opacity: 0;
+    }
+    50% {
+        top: -500px;
+        left: -250px;
+        rotate: -180deg;
+    }
+    to {
+        top: 0;
+        left: 0;
+        rotate: 0;
+        opacity: 1;
+    }
+}
