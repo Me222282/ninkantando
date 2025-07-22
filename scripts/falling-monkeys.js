@@ -39,8 +39,12 @@ function spawnMonkey(mw) {
     }, animDuration);
 }
 
+var playing = false;
 function playAudio()
 {
+    if (playing) { return; }
+    playing = true;
+    
     // play audio
     var audio = new Audio("/static/audio/makio-and-linguini-theme.mp3");
     audio.loop = true;
