@@ -1,0 +1,26 @@
+@keyframes spin {
+	from {
+        transform: rotate(0deg);
+    }
+	to {
+        transform: rotate(360deg);
+    }
+}
+
+.spinner {
+    width: 60%;
+}
+
+.spinner:hover {
+    animation: spin 5s linear 0s infinite;
+}
+
+.spin-box {
+    width: 100%;
+    height: calc(100% - 65px);
+    justify-content: space-around;
+    align-items: center;
+    
+    /* pointer-events: none; */
+    display: flex;
+}
