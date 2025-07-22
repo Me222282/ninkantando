@@ -39,10 +39,15 @@ function spawnMonkey(mw) {
     }, animDuration);
 }
 
-// play audio
-var audio = new Audio("/static/audio/makio-and-linguini-theme.mp3");
-audio.loop = true;
-audio.play();
+function playAudio()
+{
+    // play audio
+    var audio = new Audio("/static/audio/makio-and-linguini-theme.mp3");
+    audio.loop = true;
+    audio.play();
+}
+
+document.addEventListener("click", playAudio);
 
 (async function() {
     var mw = document.getElementById("monkey-wrapper");
