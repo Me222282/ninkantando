@@ -58,6 +58,9 @@ header nav ul li {
 header nav ul li:hover {
     color: #e4000f;
 }
+header nav ul li:hover path {
+    fill: #e4000f;
+}
 
 header nav ul #twitter-link {
     font-size: 1.5rem;
