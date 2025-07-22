@@ -14,8 +14,12 @@ function randomReal(min, max) {
     return Math.random() * (max - min) + min;
 }
 
+function sleep(ms)
+{
+    return new Promise(resolve => setTimeout(resolve, ms));
+}
 
-function spawnMonkey() {
+function spawnMonkey(mw) {
     let monkeyEl = document.createElement("img");
     monkeyEl.classList.add("falling-monkey")
     monkeyEl.src = "/static/media/MONKEY.png";
@@ -27,7 +31,7 @@ function spawnMonkey() {
     let animDuration = randomInt(3000, 8000);
     monkeyEl.style.animationDuration = animDuration + "ms";
 
-    document.getElementById("monkey-wrapper").appendChild(monkeyEl);
+    mw.appendChild(monkeyEl);
 
     // remove monkeys after their animation
     setTimeout(() => {
@@ -35,11 +39,18 @@ function spawnMonkey() {
     }, animDuration);
 }
 
-(function loop() {
-    // random intervals
-    var rand = randomInt(0, 800);
-    setTimeout(() => {
-        spawnMonkey();
-        loop();
-    }, rand);
-}());
+// play audio
+var audio = new Audio("/static/audio/makio-and-linguini-theme.mp3");
+audio.loop = true;
+audio.play();
+
+(async function() {
+    var mw = document.getElementById("monkey-wrapper");
+    
+    while (true)
+    {
+        spawnMonkey(mw);
+        var rand = randomInt(0, 800);
+        await sleep(rand);
+    }
+})();
