@@ -8,15 +8,30 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 		<link rel="stylesheet" href="/style/style.css">
+		<link rel="stylesheet" href="/style/navigation.css">
 	</head>
 
 	<body>
         <div id="fill-page">
-            
+
         </div>
-        
+
+		<header class="site-header">
+			<a href="/">
+				<div id="logo">
+					<object data="/static/svg/logo-white.svg" type="image/svg+xml"></object>
+				</div>
+			</a>
+
+			<nav>
+				<ul>
+					<li><a href="/pages/factory.html">Factory</a></li> <!-- TODO omitting .html here works in production deployment but not locally -->
+				</ul>
+			</nav>
+		</header>
+
         <object class="svg-small" data="/static/svg/makio-head-toy.svg" type="image/svg+xml"></object>
-        
+
         <script src="/scripts/fill-page.js"></script>
 	</body>
 </html>

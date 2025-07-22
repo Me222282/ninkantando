@@ -20,6 +20,22 @@ header #logo {
 
     pointer-events: none;
 }
+
 header #logo > object {
     width: 80%;
+}
+
+header nav {
+    margin-left: 2rem;
+
+    align-content: center;
+
+    font-weight: 700;
+    font-size: 0.875rem;
+}
+
+header nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
 }
