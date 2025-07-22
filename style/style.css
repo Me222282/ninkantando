@@ -1,9 +1,13 @@
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
 html, body {
     margin: 0;
     width: 100%;
     height: 100%;
 
-    font-family: "museo-sans", -apple-system, BlinkMacSystemFont, sans-serif;
+    font-family: "Raleway", "museo-sans", -apple-system, BlinkMacSystemFont, sans-serif;
+    font-optical-sizing: auto;
     color: #484848;
 }
 
