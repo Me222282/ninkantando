@@ -29,11 +29,15 @@ header #logo > object {
 
 header nav {
     margin-left: 2rem;
-
-    align-content: center;
+    margin-right: 2rem;
 
     font-weight: 700;
     font-size: 0.875rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
 }
 
 header nav ul {
@@ -49,4 +53,8 @@ header nav ul li {
 }
 header nav ul li:hover {
     color: #e4000f;
+}
+
+header nav ul #twitter-link {
+    font-size: 1.5rem;
 }
