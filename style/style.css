@@ -9,12 +9,6 @@ html, body {
     font-family: "Raleway", "museo-sans", -apple-system, BlinkMacSystemFont, sans-serif;
     font-optical-sizing: auto;
     color: #484848;
-    overflow-x: hidden;
-}
-
-div {
-    width: min-content;
-    height: min-content;
 }
 
 a {
