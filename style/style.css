@@ -16,6 +16,29 @@ a {
     text-decoration: inherit;
 }
 
+p a {
+    color: #e4000f;
+    font-weight: 600;
+}
+p a:hover {
+    color: #af000c;
+}
+
+hr {
+    width: 97%;
+}
+
+section {
+    margin: 1em;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+p {
+    max-width: 80ch;
+}
+
 .svg-small {
     width: 100px;
 }
