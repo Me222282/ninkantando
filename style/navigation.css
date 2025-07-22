@@ -67,11 +67,8 @@ header nav ul #twitter-link {
 }
 
 #logo > img {
-    position: absolute;
-    width: 15px;
     top: -20px;
     left: 126px;
-    transition: 300ms;
 }
 a:hover #logo > img {
     top: 7px;

@@ -12,6 +12,18 @@
     animation-fill-mode: forwards;
 }
 
+.product-container {
+    position: relative;
+}
+
+.product-container .mini-monkey {
+    will-change: transform;
+    transition: 800ms;
+}
+.mini-monkey-final {
+    transform: rotate(720deg);
+}
+
 @keyframes appear {
     from {
         top: -500px;
