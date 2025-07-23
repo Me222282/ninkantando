@@ -44,7 +44,8 @@ setTimeout(async function() {
     
     while (true)
     {
-        var rand = randomInt(0, object.children.length - 1);
+        let min = Math.max(object.children.length - 20, 0);
+        var rand = randomInt(min, object.children.length - 1);
         var product = object.children.item(rand);
         
         let start = product.getBoundingClientRect();
@@ -87,4 +88,4 @@ setTimeout(async function() {
         var time = randomInt(3000, 10000);
         await sleep(time);
     }
-}, 500);
+}, 3000);
