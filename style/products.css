@@ -1,0 +1,24 @@
+.row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.column {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.item {
+    max-width: 30ch;
+    margin: 5px;
+}
+
+section {
+    flex-wrap: wrap;
+    padding: 5px 1ch 5px 1ch;
+}
+
+article {
+    margin: 3px;
+}

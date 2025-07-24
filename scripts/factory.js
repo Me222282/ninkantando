@@ -71,7 +71,8 @@ setTimeout(async function() {
             product.appendChild(monkey);
             monkey.style.transform = "translate(" + x + "px," + y + "px) rotate(0deg)";
             console.log(monkey.style.transform);
-            
+            // cause document to update - add monkey at starting position
+            // allows animation to work
             let layout = document.body.offsetWidth;
             
             let end = randomInt(0, 1);
