@@ -61,6 +61,10 @@ p {
     z-index: 100;
 }
 
+.no-wrap {
+    white-space: nowrap;
+}
+
 .spin {
     margin: 50px;
     position: relative;
